@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Krestianstvo.org Blog</title>
+        <link>https://www.krestianstvo.org/blog</link>
+        <description>The best place to stay up-to-date with the latest Krestianstvo.org news and events.</description>
+        <lastBuildDate>Mon, 11 Feb 2019 06:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <image>
+            <title>Krestianstvo.org Blog</title>
+            <url>https://www.krestianstvo.org/img/logo.png</url>
+            <link>https://www.krestianstvo.org/blog</link>
+        </image>
+        <copyright>Copyright © 2021 Krestianstvo.org</copyright>
+        <item>
+            <title><![CDATA[Test blog post]]></title>
+            <link>https://www.krestianstvo.org/blog/2019/02/11/test-post.html</link>
+            <guid>https://www.krestianstvo.org/blog/2019/02/11/test-post.html</guid>
+            <pubDate>Mon, 11 Feb 2019 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p>First blog post</p> ]]></description>
+        </item>
+    </channel>
+</rss>

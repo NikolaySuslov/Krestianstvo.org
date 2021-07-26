@@ -1,0 +1,1212 @@
+
+<!DOCTYPE HTML>
+<html lang="ru" >
+    <head>
+        <title>Перемещение,вращение, масштабирование объектов · VLE book</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="modifiers.html" />
+    
+    
+    <link rel="prev" href="groups.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Введите условия поиска" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="start.html">
+            
+                <a href="start.html">
+            
+                    
+                    Начало работы
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="interface.html">
+            
+                <a href="interface.html">
+            
+                    
+                    Работа с интерфейсом
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="camera.html">
+            
+                <a href="camera.html">
+            
+                    
+                    Камеры
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="orbit_camera.html">
+            
+                <a href="orbit_camera.html">
+            
+                    
+                    Режим орбиты
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="navigation.html">
+            
+                <a href="navigation.html">
+            
+                    
+                    Навигационный режим
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="free_camera.html">
+            
+                <a href="free_camera.html">
+            
+                    
+                    Режим свободной камеры
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="kind_avatar.html">
+            
+                <a href="kind_avatar.html">
+            
+                    
+                    Режим вида от аватара
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="flying.html">
+            
+                <a href="flying.html">
+            
+                    
+                    Облет
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="creating_camera.html">
+            
+                <a href="creating_camera.html">
+            
+                    
+                    Создание камеры
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="separation_camera.html">
+            
+                <a href="separation_camera.html">
+            
+                    
+                    Разделение камеры
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="primitives.html">
+            
+                <a href="primitives.html">
+            
+                    
+                    Примитивы
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="sphere.html">
+            
+                <a href="sphere.html">
+            
+                    
+                    Сфера
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="cube.html">
+            
+                <a href="cube.html">
+            
+                    
+                    Куб
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="plane.html">
+            
+                <a href="plane.html">
+            
+                    
+                    Плоскость
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="cylinder.html">
+            
+                <a href="cylinder.html">
+            
+                    
+                    Цилиндр
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="cone.html">
+            
+                <a href="cone.html">
+            
+                    
+                    Конус
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="text.html">
+            
+                <a href="text.html">
+            
+                    
+                    Текст
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="torus.html">
+            
+                <a href="torus.html">
+            
+                    
+                    Тор
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="empty.html">
+            
+                <a href="empty.html">
+            
+                    
+                    Пустой
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="shapes.html">
+            
+                <a href="shapes.html">
+            
+                    
+                    Фигуры
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="selection.html">
+            
+                <a href="selection.html">
+            
+                    
+                    Выбор объектов
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="selection_scene.html">
+            
+                <a href="selection_scene.html">
+            
+                    
+                    Выбор сцены
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="groups.html">
+            
+                <a href="groups.html">
+            
+                    
+                    Работа с группой объектов
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8" data-path="move.html">
+            
+                <a href="move.html">
+            
+                    
+                    Перемещение,вращение, масштабирование объектов
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="modifiers.html">
+            
+                <a href="modifiers.html">
+            
+                    
+                    Модификаторы
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="bend.html">
+            
+                <a href="bend.html">
+            
+                    
+                    Сгибание
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="twist.html">
+            
+                <a href="twist.html">
+            
+                    
+                    Скручивание
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="taper.html">
+            
+                <a href="taper.html">
+            
+                    
+                    Сужение
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="stretch.html">
+            
+                <a href="stretch.html">
+            
+                    
+                    Растяжение
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="offset.html">
+            
+                <a href="offset.html">
+            
+                    
+                    Смещение
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="push.html">
+            
+                <a href="push.html">
+            
+                    
+                    Вдавливание - от себя
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="extrusion.html">
+            
+                <a href="extrusion.html">
+            
+                    
+                    Выдавливание
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.8" data-path="uvmap.html">
+            
+                <a href="uvmap.html">
+            
+                    
+                    UV Карта
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.9" data-path="lathe.html">
+            
+                <a href="lathe.html">
+            
+                    
+                    Станок
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="texture.html">
+            
+                <a href="texture.html">
+            
+                    
+                    Работа с текстурой 
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="texture_library.html">
+            
+                <a href="texture_library.html">
+            
+                    
+                    Работа с библиотекой текстур 
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="lighting.html">
+            
+                <a href="lighting.html">
+            
+                    
+                    Работа с освещением 
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="lighting_scene.html">
+            
+                <a href="lighting_scene.html">
+            
+                    
+                    Освещение share_world.mdсцены 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="point_light.html">
+            
+                <a href="point_light.html">
+            
+                    
+                    Точеченый свет
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="directional_light.html">
+            
+                <a href="directional_light.html">
+            
+                    
+                    Направленный свет
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="spot_light.html">
+            
+                <a href="spot_light.html">
+            
+                    
+                    Местный свет
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="material.html">
+            
+                <a href="material.html">
+            
+                    
+                    Работа с материалом 
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="culling.html">
+            
+                <a href="culling.html">
+            
+                    
+                    Видимость передней и задней  поверхностей объекта 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="inventory.html">
+            
+                <a href="inventory.html">
+            
+                    
+                    Инвентарь
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="import.html">
+            
+                <a href="import.html">
+            
+                    
+                    Импорт 3D модели
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="material_flag.html">
+            
+                <a href="material_flag.html">
+            
+                    
+                    Свойства материала
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="draw_blocks.html">
+            
+                <a href="draw_blocks.html">
+            
+                    
+                    Рисовать блоками
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="control_word.html">
+            
+                <a href="control_word.html">
+            
+                    
+                    Управление Миром
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="setting.html">
+            
+                <a href="setting.html">
+            
+                    
+                    Установки
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="reestablish.html">
+            
+                <a href="reestablish.html">
+            
+                    
+                    Восстановить Мир
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.3" data-path="copy_world.html">
+            
+                <a href="copy_world.html">
+            
+                    
+                    Скопировать Мир
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.4" data-path="rename_world.html">
+            
+                <a href="rename_world.html">
+            
+                    
+                    Переименовать Мир
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.5" data-path="icon_world.html">
+            
+                <a href="icon_world.html">
+            
+                    
+                    Иконка Мира на стартовой странице
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.6" data-path="share_world.html">
+            
+                <a href="share_world.html">
+            
+                    
+                    Разделить Мир
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="behavior.html">
+            
+                <a href="behavior.html">
+            
+                    
+                    Поведение
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="Turn.html">
+            
+                <a href="Turn.html">
+            
+                    
+                    Поворот
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="Orbit.html">
+            
+                <a href="Orbit.html">
+            
+                    
+                    Орбита
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.3" data-path="Sign_guidance.html">
+            
+                <a href="Sign_guidance.html">
+            
+                    
+                    Знак на наведение
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.4" data-path="follow_path.html">
+            
+                <a href="follow_path.html">
+            
+                    
+                    Следовать пути
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.5" data-path="Look_at.html">
+            
+                <a href="Look_at.html">
+            
+                    
+                    Смотреть на
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="Physics.html">
+            
+                <a href="Physics.html">
+            
+                    
+                    Физика
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" data-path="Gravity.html">
+            
+                <a href="Gravity.html">
+            
+                    
+                    Сила тяжести
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.2" data-path="mass.html">
+            
+                <a href="mass.html">
+            
+                    
+                    Масса
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.3" data-path="Torque.html">
+            
+                <a href="Torque.html">
+            
+                    
+                    Момент вращения
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.4" data-path="restriction.html">
+            
+                <a href="restriction.html">
+            
+                    
+                    Ограничения
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.4.1" data-path="spot_restriction.html">
+            
+                <a href="spot_restriction.html">
+            
+                    
+                    Точечное ограничение
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.4.2" data-path="Hinge_restriction.html">
+            
+                <a href="Hinge_restriction.html">
+            
+                    
+                    Шарнирное ограничение
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.4.3" data-path="Slide_restriction.html">
+            
+                <a href="Slide_restriction.html">
+            
+                    
+                    Ползунковое ограничение
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.4.4" data-path="Fixed_restriction.html">
+            
+                <a href="Fixed_restriction.html">
+            
+                    
+                    Фиксированное ограничение
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="joint_cooperation.html">
+            
+                <a href="joint_cooperation.html">
+            
+                    
+                    Совместное взаимодействие
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Опубликовано с помощью GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Перемещение,вращение, масштабирование объектов</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x43F;&#x435;&#x440;&#x435;&#x43C;&#x435;&#x449;&#x435;&#x43D;&#x438;&#x435;-&#x432;&#x440;&#x430;&#x449;&#x43D;&#x438;&#x435;-&#x43C;&#x430;&#x441;&#x448;&#x442;&#x430;&#x431;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x43D;&#x438;&#x435;-&#x43E;&#x431;&#x44A;&#x435;&#x43A;&#x442;&#x43E;&#x432;">&#x41F;&#x435;&#x440;&#x435;&#x43C;&#x435;&#x449;&#x435;&#x43D;&#x438;&#x435;, &#x432;&#x440;&#x430;&#x449;&#x43D;&#x438;&#x435;, &#x43C;&#x430;&#x441;&#x448;&#x442;&#x430;&#x431;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x43D;&#x438;&#x435; &#x43E;&#x431;&#x44A;&#x435;&#x43A;&#x442;&#x43E;&#x432;.</h2><p><strong>&#x41F;&#x435;&#x440;&#x435;&#x43C;&#x435;&#x449;&#x435;&#x43D;&#x438;&#x435;</strong></p><p>&#x427;&#x442;&#x43E;&#x431;&#x44B; &#x43F;&#x435;&#x440;&#x435;&#x43C;&#x435;&#x441;&#x442;&#x438;&#x442;&#x44C; &#x43E;&#x431;&#x44A;&#x435;&#x43A;&#x442; &#x432; &#x412;&#x438;&#x440;&#x442;&#x443;&#x430;&#x43B;&#x44C;&#x43D;&#x43E;&#x43C; &#x41C;&#x438;&#x440;&#x435;, &#x432;&#x44B;&#x431;&#x435;&#x440;&#x438;&#x442;&#x435; &#x43E;&#x431;&#x44A;&#x435;&#x43A;&#x442;, &#x438; &#x43F;&#x43E;&#x44F;&#x432;&#x438;&#x442;&#x441;&#x44F; &#x433;&#x438;&#x437;&#x43C;&#x43E;  (&#x441;&#x43C; &#x440;&#x438;&#x441;&#x443;&#x43D;&#x43E;&#x43A; &#x43D;&#x438;&#x436;&#x435;).</p><p><img alt="image063.png" src="images/image063.png"></p><p>&#x41F;&#x43E; &#x443;&#x43C;&#x43E;&#x43B;&#x447;&#x430;&#x43D;&#x438;&#x44E; &#x440;&#x435;&#x436;&#x438;&#x43C;&#x43E;&#x43C; &#x434;&#x43B;&#x44F; &#x438;&#x43D;&#x441;&#x442;&#x440;&#x443;&#x43C;&#x435;&#x43D;&#x442;&#x430; &#x433;&#x438;&#x437;&#x43C;&#x43E; &#x44F;&#x432;&#x43B;&#x44F;&#x435;&#x442;&#x441;&#x44F; &#x440;&#x435;&#x436;&#x438;&#x43C; &#x43F;&#x435;&#x440;&#x435;&#x43C;&#x435;&#x449;&#x435;&#x43D;&#x438;&#x44F;. &#x41A;&#x440;&#x430;&#x441;&#x43D;&#x430;&#x44F; &#x441;&#x442;&#x440;&#x435;&#x43B;&#x43A;&#x430; &#x432; &#x43D;&#x430;&#x43F;&#x440;&#x430;&#x432;&#x43B;&#x435;&#x43D;&#x438;&#x438; X, &#x437;&#x435;&#x43B;&#x435;&#x43D;&#x430;&#x44F; &#x441;&#x442;&#x440;&#x435;&#x43B;&#x43A;&#x430; &#x432; &#x43D;&#x430;&#x43F;&#x440;&#x430;&#x432;&#x43B;&#x435;&#x43D;&#x438;&#x438; Y, &#x438; &#x441;&#x438;&#x43D;&#x44F;&#x44F; &#x441;&#x442;&#x440;&#x435;&#x43B;&#x43A;&#x430; &#x432; &#x43D;&#x430;&#x43F;&#x440;&#x430;&#x432;&#x43B;&#x435;&#x43D;&#x438;&#x438; Z.
+&#x41F;&#x440;&#x43E;&#x441;&#x442;&#x43E; &#x43D;&#x430;&#x436;&#x438;&#x43C;&#x430;&#x439;&#x442;&#x435; &#x43D;&#x430; &#x441;&#x442;&#x440;&#x435;&#x43B;&#x43E;&#x447;&#x43A;&#x443; &#x43F;&#x43E; &#x43D;&#x430;&#x43F;&#x440;&#x430;&#x432;&#x43B;&#x435;&#x43D;&#x438;&#x44E;, &#x432; &#x43A;&#x43E;&#x442;&#x43E;&#x440;&#x43E;&#x43C; &#x445;&#x43E;&#x442;&#x438;&#x442;&#x435; &#x43F;&#x435;&#x440;&#x435;&#x43C;&#x435;&#x449;&#x430;&#x442;&#x44C; &#x43E;&#x431;&#x44A;&#x435;&#x43A;&#x442;, &#x438; &#x442;&#x430;&#x449;&#x438;&#x442;&#x435;  &#x435;&#x433;&#x43E; &#x432; &#x44D;&#x442;&#x43E;&#x43C; &#x43D;&#x430;&#x43F;&#x440;&#x430;&#x432;&#x43B;&#x435;&#x43D;&#x438;&#x438;.
+&#x413;&#x438;&#x437;&#x43C;&#x43E; &#x442;&#x430;&#x43A;&#x436;&#x435; &#x43F;&#x43E;&#x43A;&#x430;&#x437;&#x44B;&#x432;&#x430;&#x435;&#x442; &#x442;&#x440;&#x438; &#x446;&#x432;&#x435;&#x442;&#x43D;&#x44B;&#x445; &#x43A;&#x432;&#x430;&#x434;&#x440;&#x430;&#x442;&#x430; &#x43F;&#x440;&#x438; &#x43F;&#x435;&#x440;&#x435;&#x43C;&#x435;&#x449;&#x435;&#x43D;&#x438;&#x438;. &#x41D;&#x430;&#x436;&#x43C;&#x438;&#x442;&#x435; &#x438; &#x43F;&#x435;&#x440;&#x435;&#x442;&#x430;&#x449;&#x438;&#x442;&#x435; &#x436;&#x435;&#x43B;&#x442;&#x44B;&#x439; &#x43A;&#x432;&#x430;&#x434;&#x440;&#x430;&#x442; &#x434;&#x432;&#x438;&#x433;&#x430;&#x44F;&#x441;&#x44C; &#x432; &#x43D;&#x430;&#x43F;&#x440;&#x430;&#x432;&#x43B;&#x435;&#x43D;&#x438;&#x44F;&#x445; X &#x438; Y &#x432; &#x442;&#x43E; &#x436;&#x435; &#x432;&#x440;&#x435;&#x43C;&#x44F; &#x43F;&#x440;&#x438; &#x43F;&#x43E;&#x441;&#x442;&#x43E;&#x44F;&#x43D;&#x43D;&#x43E;&#x439; Z. &#x41D;&#x430;&#x436;&#x43C;&#x438;&#x442;&#x435; &#x438; &#x43F;&#x435;&#x440;&#x435;&#x442;&#x430;&#x449;&#x438;&#x442;&#x435; &#x444;&#x438;&#x43E;&#x43B;&#x435;&#x442;&#x43E;&#x432;&#x44B;&#x439; &#x43A;&#x432;&#x430;&#x434;&#x440;&#x430;&#x442; &#x434;&#x432;&#x438;&#x433;&#x430;&#x44F;&#x441;&#x44C; &#x432; X &#x438; Z &#x43D;&#x430;&#x43F;&#x440;&#x430;&#x432;&#x43B;&#x435;&#x43D;&#x438;&#x44F;&#x445; &#x432; &#x442;&#x43E; &#x436;&#x435; &#x432;&#x440;&#x435;&#x43C;&#x44F; &#x43F;&#x440;&#x438; &#x43F;&#x43E;&#x441;&#x442;&#x43E;&#x44F;&#x43D;&#x43D;&#x43E;&#x43C; &#x423;. &#x41D;&#x430;&#x43A;&#x43E;&#x43D;&#x435;&#x446;, &#x43D;&#x430;&#x436;&#x43C;&#x438;&#x442;&#x435; &#x438; &#x43F;&#x435;&#x440;&#x435;&#x442;&#x430;&#x449;&#x438;&#x442;&#x435; &#x441;&#x438;&#x43D;&#x438;&#x439; &#x43A;&#x432;&#x430;&#x434;&#x440;&#x430;&#x442; &#x434;&#x432;&#x438;&#x433;&#x430;&#x44F;&#x441;&#x44C; &#x432; Y &#x438; Z &#x43D;&#x430;&#x43F;&#x440;&#x430;&#x432;&#x43B;&#x435;&#x43D;&#x438;&#x44F;&#x445; &#x43F;&#x440;&#x438; &#x43F;&#x43E;&#x441;&#x442;&#x43E;&#x44F;&#x43D;&#x43D;&#x43E;&#x43C; X .
+&#x41C;&#x43E;&#x436;&#x43D;&#x43E; &#x432;&#x44B;&#x431;&#x440;&#x430;&#x442;&#x44C; &#x43D;&#x435;&#x441;&#x43A;&#x43E;&#x43B;&#x44C;&#x43A;&#x43E; &#x43E;&#x431;&#x44A;&#x435;&#x43A;&#x442;&#x43E;&#x432;, &#x443;&#x434;&#x435;&#x440;&#x436;&#x438;&#x432;&#x430;&#x44F; &#x43A;&#x43D;&#x43E;&#x43F;&#x43A;&#x443; CTRL &#x438; &#x43D;&#x430;&#x436;&#x430;&#x432; &#x43D;&#x430; &#x432;&#x442;&#x43E;&#x440;&#x43E;&#x439; &#x43E;&#x431;&#x44A;&#x435;&#x43A;&#x442;. &#x412;&#x44B; &#x43C;&#x43E;&#x436;&#x435;&#x442;&#x435; &#x43F;&#x435;&#x440;&#x435;&#x43C;&#x435;&#x449;&#x430;&#x442;&#x44C; &#x43D;&#x435;&#x441;&#x43A;&#x43E;&#x43B;&#x44C;&#x43A;&#x43E; &#x43E;&#x431;&#x44A;&#x435;&#x43A;&#x442;&#x43E;&#x432; &#x43E;&#x434;&#x43D;&#x43E;&#x432;&#x440;&#x435;&#x43C;&#x435;&#x43D;&#x43D;&#x43E;.</p><p><strong>&#x412;&#x440;&#x430;&#x449;&#x435;&#x43D;&#x438;&#x435;</strong></p><p>&#x410;&#x43A;&#x442;&#x438;&#x432;&#x438;&#x440;&#x443;&#x439;&#x442;&#x435; &#x438;&#x43D;&#x441;&#x442;&#x440;&#x443;&#x43C;&#x435;&#x43D;&#x442; &#x432;&#x440;&#x430;&#x449;&#x435;&#x43D;&#x438;&#x44F;. &#x414;&#x43E;&#x441;&#x442;&#x443;&#x43F;&#x43D;&#x43E; &#x438;&#x437; &#x43C;&#x435;&#x43D;&#x44E; <em>&#x420;&#x435;&#x434;&#x430;&#x43A;&#x442;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x442;&#x44C;&gt; &#x422;&#x440;&#x430;&#x43D;&#x441;&#x444;&#x43E;&#x440;&#x43C;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x442;&#x44C; &gt;&#x412;&#x440;&#x430;&#x449;&#x430;&#x442;&#x44C;</em> (&#x435;). &#x41F;&#x43E;&#x44F;&#x432;&#x438;&#x442;&#x441;&#x44F; &#x433;&#x438;&#x437;&#x43C;&#x43E; &#x43D;&#x430; &#x432;&#x44B;&#x431;&#x440;&#x430;&#x43D;&#x43D;&#x43E;&#x43C; &#x43E;&#x431;&#x44A;&#x435;&#x43A;&#x442;&#x435;.</p><p><img alt="image041.png" src="images/image041.png"></p><p>&#x41D;&#x430;&#x436;&#x43C;&#x438;&#x442;&#x435; &#x43E;&#x441;&#x44C; &#x433;&#x438;&#x437;&#x43C;&#x43E; &#x432; &#x43D;&#x430;&#x43F;&#x440;&#x430;&#x432;&#x43B;&#x435;&#x43D;&#x438;&#x438;, &#x432; &#x43A;&#x43E;&#x442;&#x43E;&#x440;&#x43E;&#x43C; &#x445;&#x43E;&#x442;&#x438;&#x442;&#x435; &#x43F;&#x43E;&#x432;&#x435;&#x440;&#x43D;&#x443;&#x442;&#x44C; &#x43E;&#x431;&#x44A;&#x435;&#x43A;&#x442; &#x438; &#x442;&#x430;&#x449;&#x438;&#x442;&#x435; &#x43F;&#x43E; &#x43F;&#x440;&#x44F;&#x43C;&#x43E;&#x439; &#x433;&#x43E;&#x440;&#x438;&#x437;&#x43E;&#x43D;&#x442;&#x430;&#x43B;&#x44C;&#x43D;&#x43E;&#x439; &#x43B;&#x438;&#x43D;&#x438;&#x438; &#x432; &#x43E;&#x434;&#x43D;&#x43E;&#x43C; &#x43D;&#x430;&#x43F;&#x440;&#x430;&#x432;&#x43B;&#x435;&#x43D;&#x438;&#x438;, &#x447;&#x442;&#x43E;&#x431;&#x44B; &#x43F;&#x43E;&#x432;&#x435;&#x440;&#x43D;&#x443;&#x442;&#x44C; &#x432; &#x43E;&#x434;&#x43D;&#x443; &#x441;&#x442;&#x43E;&#x440;&#x43E;&#x43D;&#x443;, &#x430; &#x437;&#x430;&#x442;&#x435;&#x43C; &#x43F;&#x43E; &#x43F;&#x440;&#x44F;&#x43C;&#x43E;&#x439; &#x433;&#x43E;&#x440;&#x438;&#x437;&#x43E;&#x43D;&#x442;&#x430;&#x43B;&#x44C;&#x43D;&#x43E;&#x439; &#x43B;&#x438;&#x43D;&#x438;&#x438; &#x432; &#x434;&#x440;&#x443;&#x433;&#x43E;&#x43C; &#x43D;&#x430;&#x43F;&#x440;&#x430;&#x432;&#x43B;&#x435;&#x43D;&#x438;&#x438;, &#x447;&#x442;&#x43E;&#x431;&#x44B; &#x43F;&#x43E;&#x432;&#x435;&#x440;&#x43D;&#x443;&#x442;&#x44C; &#x432; &#x434;&#x440;&#x443;&#x433;&#x443;&#x44E;  &#x441;&#x442;&#x43E;&#x440;&#x43E;&#x43D;&#x443;.</p><p><strong>&#x41C;&#x430;&#x441;&#x448;&#x442;&#x430;&#x431;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x43D;&#x438;&#x435;</strong></p><p>&#x410;&#x43A;&#x442;&#x438;&#x432;&#x438;&#x440;&#x443;&#x439;&#x442;&#x435; &#x438;&#x43D;&#x441;&#x442;&#x440;&#x443;&#x43C;&#x435;&#x43D;&#x442; &#x41C;&#x430;&#x441;&#x448;&#x442;&#x430;&#x431;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x442;&#x44C;. &#x41F;&#x43E;&#x44F;&#x432;&#x438;&#x442;&#x441;&#x44F; &#x433;&#x438;&#x437;&#x43C;&#x43E; &#x43D;&#x430; &#x432;&#x44B;&#x431;&#x440;&#x430;&#x43D;&#x43D;&#x43E;&#x43C; &#x43E;&#x431;&#x44A;&#x435;&#x43A;&#x442;&#x435;. &#x41D;&#x430;&#x436;&#x43C;&#x438;&#x442;&#x435; &#x438; &#x442;&#x430;&#x449;&#x438;&#x442;&#x435; &#x446;&#x435;&#x43D;&#x442;&#x440;&#x430;&#x43B;&#x44C;&#x43D;&#x443;&#x44E; &#x43A;&#x43E;&#x440;&#x43E;&#x431;&#x43A;&#x443; &#x43C;&#x430;&#x441;&#x448;&#x442;&#x430;&#x431;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x43D;&#x438;&#x44F; &#x440;&#x430;&#x432;&#x43D;&#x43E;&#x43C;&#x435;&#x440;&#x43D;&#x43E; &#x43F;&#x43E; &#x432;&#x441;&#x435;&#x43C; &#x43E;&#x441;&#x44F;&#x43C;. &#x422;&#x430;&#x43A;&#x436;&#x435; &#x434;&#x43E;&#x441;&#x442;&#x443;&#x43F;&#x43D;&#x43E; &#x438;&#x437; &#x43C;&#x435;&#x43D;&#x44E; &#x420;&#x435;&#x434;&#x430;&#x43A;&#x442;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x442;&#x44C;&gt; &#x422;&#x440;&#x430;&#x43D;&#x441;&#x444;&#x43E;&#x440;&#x43C;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x442;&#x44C; &gt;  &#x41C;&#x430;&#x441;&#x448;&#x442;&#x430;&#x431;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x442;&#x44C;.</p><p><img alt="image042.png" src="images/image042.png"></p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="groups.html" class="navigation navigation-prev " aria-label="Previous page: Работа с группой объектов">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="modifiers.html" class="navigation navigation-next " aria-label="Next page: Модификаторы">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Перемещение,вращение, масштабирование объектов","level":"1.8","depth":1,"next":{"title":"Модификаторы","level":"1.9","depth":1,"path":"modifiers.md","ref":"modifiers.md","articles":[{"title":"Сгибание","level":"1.9.1","depth":2,"path":"bend.md","ref":"bend.md","articles":[]},{"title":"Скручивание","level":"1.9.2","depth":2,"path":"twist.md","ref":"twist.md","articles":[]},{"title":"Сужение","level":"1.9.3","depth":2,"path":"taper.md","ref":"taper.md","articles":[]},{"title":"Растяжение","level":"1.9.4","depth":2,"path":"stretch.md","ref":"stretch.md","articles":[]},{"title":"Смещение","level":"1.9.5","depth":2,"path":"offset.md","ref":"offset.md","articles":[]},{"title":"Вдавливание - от себя","level":"1.9.6","depth":2,"path":"push.md","ref":"push.md","articles":[]},{"title":"Выдавливание","level":"1.9.7","depth":2,"path":"extrusion.md","ref":"extrusion.md","articles":[]},{"title":"UV Карта","level":"1.9.8","depth":2,"path":"uvmap.md","ref":"uvmap.md","articles":[]},{"title":"Станок","level":"1.9.9","depth":2,"path":"lathe.md","ref":"lathe.md","articles":[]}]},"previous":{"title":"Работа с группой объектов","level":"1.7.2","depth":2,"path":"groups.md","ref":"groups.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ga":{"configuration":"auto","token":"UA-11815598-1"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"VLE book","language":"ru","gitbook":"*","description":"Book on VLE"},"file":{"path":"move.md","mtime":"2016-02-13T13:06:58.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-10-03T13:36:48.617Z"},"basePath":".","book":{"language":"ru"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

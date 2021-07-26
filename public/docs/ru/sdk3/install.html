@@ -1,0 +1,126 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Установка на свой сервер · Krestianstvo.org</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&gt; Use these install instructions, if you want to install LiveCoding.space on your own server"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Установка на свой сервер · Krestianstvo.org"/><meta property="og:type" content="website"/><meta property="og:url" content="https://www.krestianstvo.org/"/><meta property="og:description" content="&gt; Use these install instructions, if you want to install LiveCoding.space on your own server"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/img/favicon/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script type="text/javascript" src="/loadScript.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/logo.png" alt="Krestianstvo.org"/><h2 class="headerTitleWithLogo">Krestianstvo.org</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/sdk3" target="_self">SDK v3</a></li><li class=""><a href="/sdk2" target="_self">v2</a></li><li class=""><a href="/sdk1" target="_self">v1</a></li><li class=""><a target="_self"> | </a></li><li class=""><a href="/docs/about/" target="_self">About</a></li><li class=""><a href="https://blog.krestianstvo.org/en" target="_self">Blog</a></li><li class=""><a href="/" target="_self">Language</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Инструкции</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Крестьянство SDK 3.x<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/ru/sdk3/">О программе</a></li><li class="navListItem"><a class="navItem" href="/docs/ru/sdk3/arch">Архитектруа</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Начало работы<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/ru/sdk3/firststeps">Первые шаги</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Инструкции<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem navListItemActive"><a class="navItem" href="/docs/ru/sdk3/install">Установка на свой сервер</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Установка на свой сервер</h1></header><article><div><span><blockquote>
+<p>Use these install instructions, if you want to install LiveCoding.space on your own server</p>
+</blockquote>
+<p><strong>Recommended requirements:</strong></p>
+<ul>
+<li>OS: Linux, Mac OS X, Windows</li>
+<li>Language VM: <strong>&lt; NodeJS v.10.x</strong></li>
+<li>Web Browser: <strong>Chrome (v.80x)</strong></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="1-application-source-code-hosting"></a><a href="#1-application-source-code-hosting" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1. Application source code hosting</h2>
+<p>Server for hosting LCS <strong>single page web application</strong>, providing access to the needed JS libraries <strong><code>(GunDB, A-Frame, Page.js, Cell.js, OSC.js etc..)</code></strong>, LCS main apps: <strong><code>app.js, index-app.js</code></strong> and modified <strong><code>VWF.js</code></strong> for using with offline-first, pure distributed GunDB storage system.</p>
+<blockquote>
+<p>LCS application uses a <strong>client-side router</strong> for generating and handling all URL requests.</p>
+</blockquote>
+<p>Actually every participant could <strong>HOST LOCALY</strong> that server (ensuring, that application source code is identical for all participants).</p>
+<p>To install:</p>
+<ol>
+<li>Clone: <code>git clone https://github.com/NikolaySuslov/livecodingspace.git</code></li>
+<li>Install: <code>npm install</code></li>
+<li>Run: <code>npm start</code> (for localhost testing using http, default port <code>3007</code>)</li>
+</ol>
+<p>or <code>npm startSSL</code> (https needs certs)</p>
+<h2><a class="anchor" aria-hidden="true" id="2-reflector"></a><a href="#2-reflector" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2. Reflector</h2>
+<p>Reflector is a tiny server from VWF application architecture, that is modified to be used with the current LCS single page web application and GunDB storage.</p>
+<p>Reflector server could be run anywhere in the network, but should be accessible to the main LCS app.</p>
+<p>Several Reflector servers could be run to choose from in the main LCS app.</p>
+<p>To install:</p>
+<ol>
+<li>Clone: <code>git clone https://github.com/NikolaySuslov/lcs-reflector</code></li>
+<li>Install: <code>npm install</code></li>
+<li>Run: <code>npm start</code> (for localhost testing using http, default port <code>3002</code>)</li>
+</ol>
+<p>or <code>npm startSSL</code> (https needs certs)</p>
+<h2><a class="anchor" aria-hidden="true" id="3-gundb-storage"></a><a href="#3-gundb-storage" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3. GunDB storage</h2>
+<p>You could use any running already GunDB storage system in the network or run your own, using the default template.</p>
+<blockquote>
+<p>For now, GunDB storage server has no LCS application specific server-side code, so using any fresh install of GunDB will be fine <a href="https://gun.eco/docs/Installation">Official GunDB install tutorial</a></p>
+</blockquote>
+<p>Several GunDB storage systems could be run to choose from in the main LCS app</p>
+<p>To install:</p>
+<ol>
+<li>Clone: <code>git clone https://github.com/NikolaySuslov/lcs-storage.git</code></li>
+<li>Install: <code>npm install</code></li>
+<li>Run: <code>npm start</code> (for localhost testing using http, default port <code>8080</code>)</li>
+</ol>
+<p>or <code>npm startSSL</code> (https needs certs)</p>
+<h2><a class="anchor" aria-hidden="true" id="4-setup-lcs-application"></a><a href="#4-setup-lcs-application" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>4. Setup LCS application</h2>
+<p>After <strong>fresh &amp; clean</strong> install, to start working with LCS application we need to go through setup process:</p>
+<ol>
+<li>Point web browser to LCS app: <a href="https://localhost:3007">https://localhost:3007</a></li>
+<li>Check out and fill (if needed) the <code>Reflector</code> and <code>DB host</code> fields with the right network addresses.</li>
+<li><code>Sing UP</code> with a new user (for example login: <code>app</code>)</li>
+<li>Point web browser to user profile page: <a href="https://localhost:3007/proile">https://localhost:3007/profile</a></li>
+<li>Drag &amp; Drop folder with <strong>Proxy files</strong> from the source code (<strong>public/defaults/proxy</strong>) onto <strong>&quot;Load proxy files&quot;</strong> area. That will iniatlize user's GunDB storage with proxy files for worlds bootstrap.</li>
+<li>Drag &amp; Drop folder <strong>Worlds</strong> from the source code (<strong>public/defaults/worlds</strong>) onto <strong>&quot;Load my world's protos&quot;</strong> area. You could load all worlds or choose and load by one.</li>
+<li>Go to home <a href="https://localhost:3007">https://localhost:3007</a> page and find list of worlds under <strong>&quot;My protos&quot;</strong>.</li>
+</ol>
+<h2><a class="anchor" aria-hidden="true" id="5-run-lcs-application"></a><a href="#5-run-lcs-application" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>5. Run LCS application</h2>
+<ol>
+<li>Point web browser to LCS app: <a href="https://localhost:3007">https://localhost:3007</a></li>
+<li>Start <strong>World</strong> from the list as <code>not registered</code> user or <code>Sign UP</code> with a new one</li>
+</ol>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/ru/sdk3/firststeps"><span class="arrow-prev">← </span><span>Первые шаги</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#1-application-source-code-hosting">1. Application source code hosting</a></li><li><a href="#2-reflector">2. Reflector</a></li><li><a href="#3-gundb-storage">3. GunDB storage</a></li><li><a href="#4-setup-lcs-application">4. Setup LCS application</a></li><li><a href="#5-run-lcs-application">5. Run LCS application</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/logo.png" alt="Krestianstvo.org"/></a><div><h5>Project by</h5><a href="https://www.krestianstvo.org">Krestianstvo.org</a></div><div><h5>Web</h5><a href="https://blog.krestianstvo.org">Blog</a><a href="https://www.livecoding.space">LiveCoding.space</a><a href="https://livecoding.club">LiveCoding.club</a><a href="https://live.net.ru">Live.net.ru</a></div><div><h5>Developer</h5><a href="https://gitlab.space/sdk3/livecodingspace-app">GitLab.space</a><a href="https://github.com/NikolaySuslov/livecodingspace">GitHub</a><a class="github-button" href="https://github.com/NikolaySuslov/livecodingspace" data-icon="octicon-star" data-count-href="/NikolaySuslov/livecodingspace/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a><a href="https://sdk.krestianstvo.org">SqueakSource</a></div><div><h5>Community</h5><a href="https://twitter.com/nsuslovi" target="_blank" rel="noreferrer noopener">Twitter</a><a href="https://facebook.com/nvsuslov" target="_blank" rel="noreferrer noopener">Facebook</a></div></section><section class="copyright">Copyright © 2021 Krestianstvo.org</section><script>
+      </script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-11815598-1"></script><script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag() { dataLayer.push(arguments) };
+          gtag('js', new Date());
+          gtag('config', 'UA-11815598-1');
+
+        </script></footer></div></body></html>

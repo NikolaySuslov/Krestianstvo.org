@@ -1,0 +1,128 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Архитектруа · Krestianstvo.org</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&gt; LiveCoding.space is based on a modified [Virtual World Framework](https://github.com/virtual-world-framework/vwf) application architecture."/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Архитектруа · Krestianstvo.org"/><meta property="og:type" content="website"/><meta property="og:url" content="https://www.krestianstvo.org/"/><meta property="og:description" content="&gt; LiveCoding.space is based on a modified [Virtual World Framework](https://github.com/virtual-world-framework/vwf) application architecture."/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/img/favicon/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script type="text/javascript" src="/loadScript.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/logo.png" alt="Krestianstvo.org"/><h2 class="headerTitleWithLogo">Krestianstvo.org</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/sdk3" target="_self">SDK v3</a></li><li class=""><a href="/sdk2" target="_self">v2</a></li><li class=""><a href="/sdk1" target="_self">v1</a></li><li class=""><a target="_self"> | </a></li><li class=""><a href="/docs/about/" target="_self">About</a></li><li class=""><a href="https://blog.krestianstvo.org/en" target="_self">Blog</a></li><li class=""><a href="/" target="_self">Language</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Крестьянство SDK 3.x</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Крестьянство SDK 3.x<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/ru/sdk3/">О программе</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/ru/sdk3/arch">Архитектруа</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Начало работы<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/ru/sdk3/firststeps">Первые шаги</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Инструкции<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/ru/sdk3/install">Установка на свой сервер</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Архитектруа</h1></header><article><div><span><blockquote>
+<p>LiveCoding.space is based on a modified <a href="https://github.com/virtual-world-framework/vwf">Virtual World Framework</a> application architecture.</p>
+</blockquote>
+<p>The new architecure splits original VWF server on two independent stand-alone servers and adds distributed DB storage system</p>
+<ol>
+<li>Server for single-page web application hosting.</li>
+<li>Reflector server for Virtual time.</li>
+<li>Gun DB server for Virtual Worlds, components, saves and users.</li>
+</ol>
+<h2><a class="anchor" aria-hidden="true" id="reflector"></a><a href="#reflector" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Reflector</h2>
+<p>The original VWF's reflector server depends on main application server and filesystem storage or (SQL Server DB in <a href="https://github.com/adlnet/Sandbox">ADL Sandbox</a> version)</p>
+<blockquote>
+<p>The new reflector gets all needed information from the client (generated instance ID, load info, save info).
+Look for internals at <code>getApplicationState()</code> in <code>app.js</code>.</p>
+</blockquote>
+<p>Single-page web application and client-side router based on <a href="https://visionmedia.github.io/page.js/">Page.js</a> is used for generating and handling URLs.</p>
+<h2><a class="anchor" aria-hidden="true" id="distributed-storage"></a><a href="#distributed-storage" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Distributed storage</h2>
+<p>The original VWF application serves all files from server's filesystem by handling HTTP GET/POST and AJAX requests.</p>
+<blockquote>
+<p>LiveCoding.space uses Offline-first, distributed storage <a href="https://gun.eco">Gun DB server</a>.<br>
+&quot;Gun DB is a small, easy, and fast data sync and storage system that runs everywhere JavaScript does&quot;.</p>
+</blockquote>
+<p>Even a connection to the Gun DB server is lost, application will continue working. Updated VWF components, which are serving from the browser Gun DB local storage, will be automatically synchronized after successful reconnection.</p>
+<h2><a class="anchor" aria-hidden="true" id="p2p-identites"></a><a href="#p2p-identites" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>P2P Identites</h2>
+<blockquote>
+<p>All data, that was stored and signed by any registered user in the distributed DB using <a href="https://gun.eco/docs/SEA">Gun SEA framework</a>, has the folowing access rights:  PUBLIC read / PRIVATE write.</p>
+</blockquote>
+<p>During the setup process the system user is created (global var <code>_LCS_SYS_USER</code> in the app). By default it is the first registered user, who loads the default Worlds Prototypes and Proxy VWF components onto the distributed DB. For reading/writing an encrepted data the corresponding users's secret keys are required.</p>
+<h2><a class="anchor" aria-hidden="true" id="virtual-worlds"></a><a href="#virtual-worlds" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Virtual Worlds</h2>
+<p>Livecoding.space uses the same three main entities as from the original VWF application architecture:</p>
+<ul>
+<li><strong>World Prototypes</strong></li>
+<li><strong>World Instances</strong></li>
+<li><strong>World States</strong></li>
+</ul>
+<blockquote>
+<p><strong>World Prototypes</strong> are the blueprints for <strong>World Instances</strong>, where actual collaboration between users happens.</p>
+</blockquote>
+<p>For now they are represented with text files in YAML format. They are stored in decentralized storage under the user paths. For now the <strong>World Prototypes</strong> are created by cloning an existed ones using Web GUI.</p>
+<blockquote>
+<p><strong>World Instances</strong> are like rooms for user collaboration, that are initialized from <strong>World Prototypes</strong>.</p>
+</blockquote>
+<p>Every new <strong>World Instance</strong> gets it's own generated instance ID, which alives only during collaboration (up to the last remaining participant). <strong>World Instances</strong> are not stored in the distributed DB. Closing them causes destroying of all modifications, that have been made in current Virtual World. To save modifications a User needs to Log In and to save the current Virtual World state.
+For any World Prototype several <strong>World Instances</strong> could be created at the same time.</p>
+<blockquote>
+<p><strong>World States</strong> are the World Instance's save states.</p>
+</blockquote>
+<p>As World Prototypes they are stored in the decentralized storage under the user paths and belongs to the concrete World Prototype, from which the World Instance has been initialized. Any World Prototype could have an unlimited save states, containing prototype modifications.</p>
+<h2><a class="anchor" aria-hidden="true" id="a-frame--vwf-driver"></a><a href="#a-frame--vwf-driver" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>A-Frame &amp; VWF Driver</h2>
+<blockquote>
+<p>These model and view drivers for VWF provides support for using <a href="https://aframe.io/">A-Frame</a> components in VWF applications. That allows to build a VWF collaborative apps with 3D visualisation, WebVR, HMD, trackers and mobile devices support easily.</p>
+</blockquote>
+<p>Virtual World Framework provides a robust decentralised architecture for building virtual world apps based on replicated computation model. It's original version for programming apps with 3D visualisation and deep interaction support is strongly based on ThreeJS library. So, for building such apps, the developer should be aware of ThreeJS internals, not to mention the knowing of the VWF component's architecture. But, actually VWF is working just with any programmable elements whatever simple they are. The A-Frame framework solves the problem of ThreeJS сomplexity for developing Web apps for Virtual Reality. It provides the component-based architecture for that. A-Frame incapsulates ThreeJS, hiding the internals and providing high-level interface for describing web app declaratively.</p>
+<p>Example worlds: <a href="https://livecoding.space/lcs/aframe2">Textures and Models in VWF &amp; A-Frame</a></p>
+<h2><a class="anchor" aria-hidden="true" id="ohm-language--vwf-driver"></a><a href="#ohm-language--vwf-driver" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Ohm language &amp; VWF Driver</h2>
+<blockquote>
+<p>Object-Oriented Language for Pattern Matching <a href="https://github.com/harc/ohm">Ohm language</a> driver allows to attach user's created grammar onto any VWF component and use it for scripting it's behaviour.</p>
+</blockquote>
+<p>Example worlds: <a href="https://livecoding.space/lcs/ohmlang-lsys">L-System parser example in Ohm &amp; VWF</a> or <a href="https://livecoding.space/lcs/ohmlang-calc">Calculator in Ohm &amp; VWF</a></p>
+<h2><a class="anchor" aria-hidden="true" id="osc-open-sound-control-driver"></a><a href="#osc-open-sound-control-driver" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>OSC (Open Sound Control) Driver</h2>
+<blockquote>
+<p><a href="https://github.com/colinbdclark/osc.js/">OSC.js</a> driver allows to send and recive OSC messages inside VWF components</p>
+</blockquote>
+<p>For using that functionality within browser <a href="https://github.com/NikolaySuslov/osc-relay-lcs">OSC-relay</a> is required.</p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/ru/sdk3/index"><span class="arrow-prev">← </span><span>О программе</span></a><a class="docs-next button" href="/docs/ru/sdk3/firststeps"><span>Первые шаги</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#reflector">Reflector</a></li><li><a href="#distributed-storage">Distributed storage</a></li><li><a href="#p2p-identites">P2P Identites</a></li><li><a href="#virtual-worlds">Virtual Worlds</a></li><li><a href="#a-frame--vwf-driver">A-Frame &amp; VWF Driver</a></li><li><a href="#ohm-language--vwf-driver">Ohm language &amp; VWF Driver</a></li><li><a href="#osc-open-sound-control-driver">OSC (Open Sound Control) Driver</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/logo.png" alt="Krestianstvo.org"/></a><div><h5>Project by</h5><a href="https://www.krestianstvo.org">Krestianstvo.org</a></div><div><h5>Web</h5><a href="https://blog.krestianstvo.org">Blog</a><a href="https://www.livecoding.space">LiveCoding.space</a><a href="https://livecoding.club">LiveCoding.club</a><a href="https://live.net.ru">Live.net.ru</a></div><div><h5>Developer</h5><a href="https://gitlab.space/sdk3/livecodingspace-app">GitLab.space</a><a href="https://github.com/NikolaySuslov/livecodingspace">GitHub</a><a class="github-button" href="https://github.com/NikolaySuslov/livecodingspace" data-icon="octicon-star" data-count-href="/NikolaySuslov/livecodingspace/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a><a href="https://sdk.krestianstvo.org">SqueakSource</a></div><div><h5>Community</h5><a href="https://twitter.com/nsuslovi" target="_blank" rel="noreferrer noopener">Twitter</a><a href="https://facebook.com/nvsuslov" target="_blank" rel="noreferrer noopener">Facebook</a></div></section><section class="copyright">Copyright © 2021 Krestianstvo.org</section><script>
+      </script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-11815598-1"></script><script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag() { dataLayer.push(arguments) };
+          gtag('js', new Date());
+          gtag('config', 'UA-11815598-1');
+
+        </script></footer></div></body></html>

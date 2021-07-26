@@ -1,0 +1,131 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Open Source License · Krestianstvo.org</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="![opensource](/docs/assets/images/sdk2/opensource.png)  "/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Open Source License · Krestianstvo.org"/><meta property="og:type" content="website"/><meta property="og:url" content="https://www.krestianstvo.org/"/><meta property="og:description" content="![opensource](/docs/assets/images/sdk2/opensource.png)  "/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/img/favicon/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script type="text/javascript" src="/loadScript.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/logo.png" alt="Krestianstvo.org"/><h2 class="headerTitleWithLogo">Krestianstvo.org</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/sdk3" target="_self">SDK v3</a></li><li class=""><a href="/sdk2" target="_self">v2</a></li><li class=""><a href="/sdk1" target="_self">v1</a></li><li class=""><a target="_self"> | </a></li><li class=""><a href="/docs/about/" target="_self">About</a></li><li class=""><a href="https://blog.krestianstvo.org/en" target="_self">Blog</a></li><li class=""><a href="/" target="_self">Language</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Krestianstvo SDK 1.x</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Krestianstvo SDK 1.x<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/sdk1/">About</a></li><li class="navListItem"><a class="navItem" href="/docs/sdk1/modules">Modules</a></li><li class="navListItem"><a class="navItem" href="/docs/sdk1/download">Download</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/sdk1/license">Open Source License</a></li><li class="navListItem"><a class="navItem" href="/docs/sdk1/developer">For developer</a></li><li class="navListItem"><a class="navItem" href="/docs/sdk1/documentation">Documentation</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Open Source License</h1></header><article><div><span><p><img src="/docs/assets/images/sdk2/opensource.png" alt="opensource"></p>
+<p>Krestianstvo SDK is open source project and is distributed under the MIT license, in appliance with OpenCroquet, Squeak, OpenSophie project, Seaside and Pier applications based on:</p>
+<pre><code class="hljs">MIT License
+Copyright © <span class="hljs-number">2005</span><span class="hljs-number">-2013</span> Suslov Nikolay, Krestianstvo SDK contributors
+Copyright © <span class="hljs-number">2002</span><span class="hljs-number">-2006</span> <span class="hljs-keyword">by </span>Viewpoints Research <span class="hljs-keyword">Institute, </span>Inc. <span class="hljs-keyword">and </span>other
+individual, corporate, <span class="hljs-keyword">and </span><span class="hljs-keyword">institutional </span>contributors who have
+collectively contributed elements of the Croquet software code to the
+Croquet Project. Croquet is a trademark of Viewpoints Research
+<span class="hljs-keyword">Institute, </span>Inc.
+Copyright © <span class="hljs-number">1996</span><span class="hljs-number">-2013</span> The individual, corporate, <span class="hljs-keyword">and </span><span class="hljs-keyword">institutional </span>contributors who have collectively contributed elements to this software (<span class="hljs-string">"The Squeak Community"</span>).
+Copyright © <span class="hljs-number">2003</span><span class="hljs-number">-2011</span> Lukas Renggli, renggli <span class="hljs-built_in">at</span> gmail.com
+Copyright © <span class="hljs-number">2003</span><span class="hljs-number">-2011</span> Pier Contributors
+Copyright © <span class="hljs-number">2001</span> - <span class="hljs-number">2009</span> Avi <span class="hljs-keyword">Bryant, </span><span class="hljs-keyword">Julian </span>Fitzell
+Copyright © <span class="hljs-number">2007</span> – <span class="hljs-number">2009</span> Lukas Renggli, Michel <span class="hljs-keyword">Bany, </span>Philippe Marschall
+Copyright © Seaside Contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software <span class="hljs-keyword">and </span>associated documentation files (the <span class="hljs-string">"Software"</span>), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, <span class="hljs-keyword">distribute, </span><span class="hljs-keyword">sublicense, </span><span class="hljs-keyword">and/or </span>sell copies of the Software, <span class="hljs-keyword">and </span>to permit persons to whom the Software is furnished to do so, <span class="hljs-keyword">subject </span>to the following conditions:
+
+The above copyright notice <span class="hljs-keyword">and </span>this permission notice <span class="hljs-keyword">shall </span><span class="hljs-keyword">be </span>included in all copies <span class="hljs-keyword">or </span><span class="hljs-keyword">substantial </span>portions of the Software.
+
+THE SOFTWARE IS PROVIDED <span class="hljs-string">"AS IS"</span>, WITHOUT WARRANTY OF ANY KIND, EXPRESS <span class="hljs-keyword">OR </span>IMPLIED, INCLUDING <span class="hljs-keyword">BUT </span>NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE <span class="hljs-keyword">AND </span>NONINFRINGEMENT. IN NO EVENT <span class="hljs-keyword">SHALL </span>THE AUTHORS <span class="hljs-keyword">OR </span>COPYRIGHT HOLDERS <span class="hljs-keyword">BE </span>LIABLE FOR ANY CLAIM, DAMAGES <span class="hljs-keyword">OR </span>OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT <span class="hljs-keyword">OR </span>OTHERWISE, ARISING FROM, OUT OF <span class="hljs-keyword">OR </span>IN CONNECTION WITH THE SOFTWARE <span class="hljs-keyword">OR </span>THE USE <span class="hljs-keyword">OR </span>OTHER DEALINGS IN THE SOFTWARE.
+
+</code></pre>
+<p>Also includes other open source licenses:
+OpenQwaq</p>
+<pre><code class="hljs">General Public License, Version <span class="hljs-number">2</span>
+<span class="hljs-comment"><span class="markdown">/**
+<span class="hljs-bullet"> * </span>Project OpenQwaq
+<span class="hljs-bullet"> *
+ </span>* Copyright (c) 2005-2011, Teleplace, Inc., All Rights Reserved
+<span class="hljs-bullet"> *
+ </span>* Redistributions in source code form must reproduce </span>the<span class="markdown"> above
+<span class="hljs-bullet"> * </span>copyright and this condition.
+<span class="hljs-bullet"> *
+ </span>* The contents of this file </span>are<span class="markdown"> subject to </span>the<span class="markdown"> GNU General Public
+<span class="hljs-bullet"> * </span>License, Version 2 (</span>the<span class="markdown"> "License"); </span>you<span class="markdown"> may not use this file
+<span class="hljs-bullet"> * </span>except in compliance with </span>the<span class="markdown"> License. A copy of </span>the<span class="markdown"> License is
+<span class="hljs-bullet"> * </span>available at http://www.opensource.org/licenses/gpl-2.0.php.
+<span class="hljs-bullet"> *
+ </span>*/</span></span>
+</code></pre>
+<p>Portions of Squeak</p>
+<pre><code class="hljs">Portions of Squeak are covered by the following license:
+Apache License, Version 2.0
+
+Copyright (c) Xerox Corp. 1981, 1982 All rights reserved.
+Copyright (c) Apple Computer, Inc. 1985-1996 All rights reserved.
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not <span class="hljs-keyword">use</span> this <span class="hljs-keyword">file</span> <span class="hljs-keyword">except</span> <span class="hljs-keyword">in</span> compliance <span class="hljs-keyword">with</span> the License. You may obtain a copy <span class="hljs-keyword">of</span> the License <span class="hljs-keyword">at</span>
+
+<span class="hljs-keyword">http</span>://www.apache.org/licenses/LICENSE<span class="hljs-number">-2.0</span>
+
+Unless <span class="hljs-keyword">required</span> <span class="hljs-keyword">by</span> applicable law <span class="hljs-keyword">or</span> agreed <span class="hljs-keyword">to</span> <span class="hljs-keyword">in</span> writing, software <span class="hljs-keyword">distributed</span> <span class="hljs-keyword">under</span> the License <span class="hljs-keyword">is</span> <span class="hljs-keyword">distributed</span> <span class="hljs-keyword">on</span> an <span class="hljs-string">"AS IS"</span> BASIS, <span class="hljs-keyword">WITHOUT</span> WARRANTIES <span class="hljs-keyword">OR</span> CONDITIONS <span class="hljs-keyword">OF</span> <span class="hljs-keyword">ANY</span> KIND, either express <span class="hljs-keyword">or</span> implied. See the License <span class="hljs-keyword">for</span> the specific <span class="hljs-keyword">language</span> governing permissions <span class="hljs-keyword">and</span> limitations <span class="hljs-keyword">under</span> the License.
+</code></pre>
+<p>OpenSophie project</p>
+<pre><code class="hljs">BSD license
+Copyright (c) 2004-2006, Regents of the University of Southern California
+All rights reserved.
+
+Redistribution and <span class="hljs-keyword">use</span> <span class="hljs-keyword">in</span> <span class="hljs-keyword">source</span> <span class="hljs-keyword">and</span> <span class="hljs-built_in">binary</span> forms, <span class="hljs-keyword">with</span> <span class="hljs-keyword">or</span> <span class="hljs-keyword">without</span> <span class="hljs-keyword">modification</span>, <span class="hljs-keyword">are</span> permitted provided that the <span class="hljs-keyword">following</span> conditions <span class="hljs-keyword">are</span> met:
+
+* Redistributions <span class="hljs-keyword">of</span> <span class="hljs-keyword">source</span> code must retain the above copyright <span class="hljs-keyword">notice</span>, this <span class="hljs-keyword">list</span> <span class="hljs-keyword">of</span> conditions <span class="hljs-keyword">and</span> the <span class="hljs-keyword">following</span> disclaimer.
+* Redistributions <span class="hljs-keyword">in</span> <span class="hljs-built_in">binary</span> <span class="hljs-keyword">form</span> must reproduce the above copyright <span class="hljs-keyword">notice</span>, this <span class="hljs-keyword">list</span> <span class="hljs-keyword">of</span> conditions <span class="hljs-keyword">and</span> the <span class="hljs-keyword">following</span> disclaimer <span class="hljs-keyword">in</span> the documentation <span class="hljs-keyword">and</span>/<span class="hljs-keyword">or</span> other materials provided <span class="hljs-keyword">with</span> the distribution.
+* Neither the <span class="hljs-keyword">name</span> <span class="hljs-keyword">of</span> the University <span class="hljs-keyword">of</span> Southern California, Los Angeles nor the <span class="hljs-keyword">names</span> <span class="hljs-keyword">of</span> its <span class="hljs-keyword">contributors</span> may be used <span class="hljs-keyword">to</span> endorse <span class="hljs-keyword">or</span> promote products derived <span class="hljs-keyword">from</span> this software <span class="hljs-keyword">without</span> specific <span class="hljs-keyword">prior</span> written permission.
+
+THIS SOFTWARE <span class="hljs-keyword">IS</span> PROVIDED <span class="hljs-keyword">BY</span> THE COPYRIGHT HOLDERS <span class="hljs-keyword">AND</span> <span class="hljs-keyword">CONTRIBUTORS</span> <span class="hljs-string">"AS IS"</span> <span class="hljs-keyword">AND</span> <span class="hljs-keyword">ANY</span> EXPRESS <span class="hljs-keyword">OR</span> IMPLIED WARRANTIES, <span class="hljs-keyword">INCLUDING</span>, BUT <span class="hljs-keyword">NOT</span> LIMITED <span class="hljs-keyword">TO</span>, THE IMPLIED WARRANTIES <span class="hljs-keyword">OF</span> MERCHANTABILITY <span class="hljs-keyword">AND</span> FITNESS <span class="hljs-keyword">FOR</span> A PARTICULAR PURPOSE <span class="hljs-keyword">ARE</span> DISCLAIMED. <span class="hljs-keyword">IN</span> <span class="hljs-keyword">NO</span> <span class="hljs-keyword">EVENT</span> SHALL THE COPYRIGHT OWNER <span class="hljs-keyword">OR</span> <span class="hljs-keyword">CONTRIBUTORS</span> BE LIABLE <span class="hljs-keyword">FOR</span> <span class="hljs-keyword">ANY</span> DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, <span class="hljs-keyword">OR</span> CONSEQUENTIAL DAMAGES (<span class="hljs-keyword">INCLUDING</span>, BUT <span class="hljs-keyword">NOT</span> LIMITED <span class="hljs-keyword">TO</span>, PROCUREMENT <span class="hljs-keyword">OF</span> SUBSTITUTE GOODS <span class="hljs-keyword">OR</span> SERVICES; LOSS OF <span class="hljs-keyword">USE</span>, <span class="hljs-keyword">DATA</span>, <span class="hljs-keyword">OR</span> PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE <span class="hljs-keyword">USE</span> <span class="hljs-keyword">OF</span> THIS SOFTWARE, EVEN <span class="hljs-keyword">IF</span> ADVISED <span class="hljs-keyword">OF</span> THE POSSIBILITY <span class="hljs-keyword">OF</span> SUCH DAMAGE.
+</code></pre>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/sdk1/download"><span class="arrow-prev">← </span><span>Download</span></a><a class="docs-next button" href="/docs/sdk1/developer"><span>For developer</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/logo.png" alt="Krestianstvo.org"/></a><div><h5>Project by</h5><a href="https://www.krestianstvo.org">Krestianstvo.org</a></div><div><h5>Web</h5><a href="https://blog.krestianstvo.org">Blog</a><a href="https://www.livecoding.space">LiveCoding.space</a><a href="https://livecoding.club">LiveCoding.club</a><a href="https://live.net.ru">Live.net.ru</a></div><div><h5>Developer</h5><a href="https://gitlab.space/sdk3/livecodingspace-app">GitLab.space</a><a href="https://github.com/NikolaySuslov/livecodingspace">GitHub</a><a class="github-button" href="https://github.com/NikolaySuslov/livecodingspace" data-icon="octicon-star" data-count-href="/NikolaySuslov/livecodingspace/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a><a href="https://sdk.krestianstvo.org">SqueakSource</a></div><div><h5>Community</h5><a href="https://twitter.com/nsuslovi" target="_blank" rel="noreferrer noopener">Twitter</a><a href="https://facebook.com/nvsuslov" target="_blank" rel="noreferrer noopener">Facebook</a></div></section><section class="copyright">Copyright © 2021 Krestianstvo.org</section><script>
+      </script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-11815598-1"></script><script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag() { dataLayer.push(arguments) };
+          gtag('js', new Date());
+          gtag('config', 'UA-11815598-1');
+
+        </script></footer></div></body></html>

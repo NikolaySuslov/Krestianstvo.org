@@ -1,0 +1,161 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Projects developed with Krestianstvo SDK · Krestianstvo.org</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="## Virtual World Framework &amp; OMeta: collaborative programming of distributed objects with user defined languages"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Projects developed with Krestianstvo SDK · Krestianstvo.org"/><meta property="og:type" content="website"/><meta property="og:url" content="https://www.krestianstvo.org/"/><meta property="og:description" content="## Virtual World Framework &amp; OMeta: collaborative programming of distributed objects with user defined languages"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/img/favicon/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script type="text/javascript" src="/loadScript.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/logo.png" alt="Krestianstvo.org"/><h2 class="headerTitleWithLogo">Krestianstvo.org</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/sdk3" target="_self">SDK v3</a></li><li class=""><a href="/sdk2" target="_self">v2</a></li><li class=""><a href="/sdk1" target="_self">v1</a></li><li class=""><a target="_self"> | </a></li><li class="siteNavGroupActive"><a href="/docs/about/" target="_self">About</a></li><li class=""><a href="https://blog.krestianstvo.org/en" target="_self">Blog</a></li><li class=""><a href="/" target="_self">Language</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Projects</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">About<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/about/">Introduction</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Publications<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/about/publications">Publications</a></li><li class="navListItem"><a class="navItem" href="/docs/about/citations">Citations</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Events<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/about/events">All events</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Projects<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem navListItemActive"><a class="navItem" href="/docs/about/projects">List of projects</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Authors<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/about/suslovnv">Suslov Nikolai Viktorovich</a></li><li class="navListItem"><a class="navItem" href="/docs/about/iasuslova">Suslova Irina Aleksandrovna</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Creative content<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/about/music">Music</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Projects developed with Krestianstvo SDK</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="virtual-world-framework--ometa-collaborative-programming-of-distributed-objects-with-user-defined-languages"></a><a href="#virtual-world-framework--ometa-collaborative-programming-of-distributed-objects-with-user-defined-languages" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Virtual World Framework &amp; OMeta: collaborative programming of distributed objects with user defined languages</h2>
+<p>The latest work being done as part of Krestianstvo SDK research effort was presented at the <a href="http://www.future-programming.org">Future Programming Workshop</a> at <a href="http://2014.splashcon.org">SPLASH 2014</a>, Portland (Oregon, United States). The full program is <a href="http://www.future-programming.org/program.html">here</a></p>
+<iframe src="//player.vimeo.com/video/106690115" width="600" height="337" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p></p>
+<p><a href="http://vle.krestianstvo.org/adl/sandbox/world/r1zgmKCYHmspu0Mn">Working prototype</a></p>
+<p><a href="https://github.com/NikolaySuslov/Sandbox-VLE/tree/vle-sandbox">Source code</a></p>
+<p>The Virtual World Framework (VWF) provides a synchronized collaborative 3D environment for the web browser. Continuing the OpenCroquet research effort, VWF allows easy application creation, and provides a simple interface to allow multiple users to interact with the state of the application that is synchronized across clients, using the notion of virtual time. A VWF application is made up of prototype components, which are programmed in JavaScript, that allows a shared code and behaviours used in distributed computation, to be modified at runtime. OMeta is a new object-oriented language for pattern matching. It is based on a variant of Parsing Expression Grammars (PEGs) which have been extended to handle arbitrary data types. OMeta's general-purpose pattern matching facilities provide a natural and convenient way for programmers to implement tokenizers, parsers, visitors, and tree transformers.
+The integration will allow to define on any VWF component it's own language grammar and replicate it through the application instances, then have a running scripts based on that shared grammar for that component. For example, one could have all the languages down from Logo (Turtle graphics) to Smalltalk available for scripting the virtual world just in the Web browser.</p>
+<p>The talk contains examples of collaborative programming of distributed objects with user defined grammars. These objects could exist alongside with each other in the same replicated virtual world, being programmed on quite different languages, but holding the same simulation.</p>
+<p><img src="/docs/assets/images/projects/fpw/poster-fpw.jpg" alt="poster" title="FPW"></p>
+<hr>
+<h2><a class="anchor" aria-hidden="true" id="curved-space-explorer-for-squeak"></a><a href="#curved-space-explorer-for-squeak" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Curved Space Explorer for Squeak</h2>
+<iframe src="//player.vimeo.com/video/71173349" width="600" height="338" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p></p>
+The project introduces the **Curved Space Explorer for Squeak project**, known as CCSE by Krestianstvo SDK.
+<p>It is a Smalltalk port version of Curved Spaces, originally developed by Jeff Weeks (<a href="http://www.geometrygames.org">http://www.geometrygames.org</a>) in C language.
+This Squeak version is derived from Krestianstvo SDK project's version, where Curved Space Explorer is collaborative in it's nature and available mainly for distributed computation.
+The aim of this project is to make Curved Space Explorer being available for the large Smalltalk audience and mainstream Squeak distribution, so that anybody interested could work with it.</p>
+<p>The project is Open Source and the code is available here: <a href="http://sdk.krestianstvo.org/sdk/ccse.html">http://sdk.krestianstvo.org/sdk/ccse.html</a></p>
+<p>The instructions are here: <a href="http://nsuslovi.blogspot.com/2013/07/curved-space-explorer-for-squeak.html">http://nsuslovi.blogspot.com/2013/07/curved-space-explorer-for-squeak.html</a></p>
+<hr>
+<h2><a class="anchor" aria-hidden="true" id="cave-virtual-reality-system"></a><a href="#cave-virtual-reality-system" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>CAVE: Virtual Reality System</h2>
+<iframe src="//player.vimeo.com/video/35907303" width="600" height="338" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p></p>
+CAVE is built up with 5 computers, running Krestianstvo SDK 2.0 (OpenQwaq based) image on each.
+Head tracking is avaliable through Microsoft Kinect. CAVE implementation is based on Daniel Faken work.
+<p>Code is freely available in Krestianstvo SDK.</p>
+<p><img src="/docs/assets/images/projects/cubevr.jpg" alt="CUBE" title="CUBE VR"></p>
+<hr>
+<h2><a class="anchor" aria-hidden="true" id="installation-with-kinect--dmx"></a><a href="#installation-with-kinect--dmx" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Installation with Kinect &amp; DMX</h2>
+<iframe src="//player.vimeo.com/video/24362658" width="600" height="338" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p></p>
+Visitors control the lights with movements of their bodys.
+<p>Microsoft Kinect, DMX controller, LightJockey, Krestianstvo SDK 2.0, Processing were used to drive the installation.
+It was presented at Arch Moscow 2011 exhibition (HALL 25, ANOTHERARCHITECT, Germany)</p>
+<p>Realisation:
+Soshenina Tatiana (<a href="http://architectan.blogspot.com">http://architectan.blogspot.com</a>)
+Suslov Nikolai (<a href="http://krestianstvo.ru">http://krestianstvo.ru</a>)</p>
+<hr>
+<h2><a class="anchor" aria-hidden="true" id="collaborative-multitouch-table"></a><a href="#collaborative-multitouch-table" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Collaborative multitouch table</h2>
+<iframe src="//player.vimeo.com/video/18211323?title=0&amp;byline=0&amp;portrait=0" width="600" height="338" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p></p>
+Multi-touch table based on Krestianstvo SDK, reacTIVision and SuperCollider.
+<hr>
+<h2><a class="anchor" aria-hidden="true" id="manj---creating-music-in-movement"></a><a href="#manj---creating-music-in-movement" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Man'J - creating music in movement</h2>
+<iframe src="//player.vimeo.com/video/13955726?title=0&amp;byline=0&amp;portrait=0" width="600" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+<p></p>
+Creating music in movement by interacting with people and architectural objects in realtime.
+<p>Video shows the Man'J chair prototype with built in Ultrasonic sensor, controlled by Arduino board, Krestianstvo SDK and Supercollider.</p>
+<p><a href="http://krestianstvo.ru/sdk/Projects/ManJ">Sorce code</a></p>
+<p>The idea and realization:
+<a href="http://architectan.blogspot.com">Soshenina Tatiana</a>,
+<a href="http://krestianstvo.ru">Suslov Nikolai</a></p>
+<p>Realization on the base of:
+<a href="http://strelkainstitute.com/projects/summer/other-reality/258/">Strelka: Institute for Media Architecture and Design (Russia, Moscow)</a></p>
+<hr>
+<h2><a class="anchor" aria-hidden="true" id="virtual-museum-of-curved-spaces-in-3d"></a><a href="#virtual-museum-of-curved-spaces-in-3d" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Virtual museum of curved spaces in 3D</h2>
+<iframe src="//player.vimeo.com/video/9174836?title=0&amp;byline=0&amp;portrait=0" width="600" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p></p>
+This video is from the "Virtual Museum of Geomtery" opening event, where the new Collaborative Curved Space Explorer version was showed. One could find more about Krestianstvo SDK and [Collaborative Curved Space](http://nsuslovi.blogspot.com/2009/12/collaborative-curved-space-explorer-v10.html)
+<p>It is pure Open Source project, so that everybody could try it by themselves, after downloading the SDK. This video shows, how Collaborative Curved Space Explorer works with Flat, Hyperbolic and Spherical spaces in multi-user mode being installed on the one shared replicated virtual world (island).</p>
+<p><img src="/docs/assets/images/projects/ccse/gm1.jpg" alt="GM1" title="CCSE"> <br>
+<img src="/docs/assets/images/projects/ccse/gm2.jpg" alt="GM2" title="CCSE"><br>
+<img src="/docs/assets/images/projects/ccse/gm3.jpg" alt="GM3" title="CCSE"><br>
+<img src="/docs/assets/images/projects/ccse/gm4.jpg" alt="GM4" title="CCSE"><br>
+<img src="/docs/assets/images/projects/ccse/gm5.jpg" alt="GM5" title="CCSE"><br>
+<img src="/docs/assets/images/projects/ccse/gm6.jpg" alt="GM6" title="CCSE"></p>
+<hr>
+<h2><a class="anchor" aria-hidden="true" id="art-installation-aivanov-bible-sketches-2007"></a><a href="#art-installation-aivanov-bible-sketches-2007" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Art installation &quot;A.Ivanov. Bible sketches&quot; [2007]</h2>
+<p>Art installation &quot;A.Ivanov Bible sketches&quot; was held at <a href="https://www.tretyakovgallery.ru/en/">Russia State Tretyakov Gallery</a>.<br>
+In the art installation I tried to connect the real space of 3 walls with its virtual projections in 3D. All installation is rendered by 3 computers (one per wall) connected in network with running Smalltalk Croquet/Krestianstvo image on every machine (scalable to any number of walls/projections).</p>
+<p><img src="/docs/assets/images/projects/ivanov/installation_ivanov.jpg" alt="IVI1" title="A.Ivanov"></p>
+<p>So the artist gets the full featured connected virtual/real space to manipulate with.
+For example: it is easy to model the real world scene lightning ( transitions and effects with color, moving the computer generated light source in the space of real walls); geometry transformations (dividing, adding new virtual walls); projecting video/3d animations/images synchronously; and so on.</p>
+<hr>
+<h2><a class="anchor" aria-hidden="true" id="multimedia-cd-on-art-aivanov-watercolorgraphics-bible-sketches-2007"></a><a href="#multimedia-cd-on-art-aivanov-watercolorgraphics-bible-sketches-2007" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Multimedia CD on Art &quot;A.Ivanov. Watercolor.Graphics. Bible sketches&quot; [2007]</h2>
+<p>Multimedia CD on art &quot;A.Ivanov Watercolor. Graphics. Bible sketches&quot; was published at <a href="https://www.tretyakovgallery.ru/en/">Russia State Tretyakov Gallery</a>.<br>
+The software for the disc was developed entirely on Smalltalk Squeak and heavily uses Seaside, Pier and Magritte meta-model.<br>
+It partly represents a complete Squeak app, that runs from CD-ROM without install, as user is needed to run the portable Web Browser for working with GUI.</p>
+<p><img src="/docs/assets/images/projects/ivanov/cd_ivanov.jpg" alt="IV1" title="A.Ivanov"></p>
+<p><img src="/docs/assets/images/projects/ivanov/cd_ivanov_print.jpg" alt="IV2" title="A.Ivanov"></p>
+<p>The disc allows to work with the content as one or an unlimited number of users simultaneously through a local network or the Internet; create annotations for works, create new albums and save them directly in the disk structure; there is built-in full-text search support. The disk does not require installation, it starts from CD-Rom or portable media and works by analogy with a Web server / object-oriented database.</p>
+<hr>
+<h2><a class="anchor" aria-hidden="true" id="multimedia-cd-on-art---whistler-and-russia-2006"></a><a href="#multimedia-cd-on-art---whistler-and-russia-2006" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Multimedia CD on Art - &quot;Whistler and Russia&quot; [2006]</h2>
+<p>Multimedia CD on art &quot;Whistler and Russia&quot; was published at <a href="https://www.tretyakovgallery.ru/en/">Russia State Tretyakov Gallery</a>.<br>
+The software for the disc was developed entirely on Smalltalk Squeak/Tweak and heavily uses Sophie's XUL programming interface for GUI.<br>
+It represents a complete Squeak app, that runs from CD-ROM without install.</p>
+<p><img src="/docs/assets/images/projects/whistler/cd_whistler.jpg" alt="WI1" title="Whistler and Russia">
+<br>
+<img src="/docs/assets/images/projects/whistler/cd_title.jpg" alt="WI2" title="Whistler and Russia"></p>
+<p><img src="/docs/assets/images/projects/whistler/whistler2.jpg" alt="WI2" title="Whistler and Russia"></p>
+<p>Screenshots from the disc.</p>
+<p><img src="/docs/assets/images/projects/whistler/whistler3.jpg" alt="WI3" title="Whistler and Russia">
+<br>
+<img src="/docs/assets/images/projects/whistler/whistler4.jpg" alt="WI4" title="Whistler and Russia"></p>
+<p>At the same time, there were experiments on building the same disc based on collaborative  virtual 3D environment - Croquet SDK.</p>
+<p><img src="/docs/assets/images/projects/whistler/whistler5.jpg" alt="WI5" title="Whistler and Russia"></p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/about/events"><span class="arrow-prev">← </span><span>All events</span></a><a class="docs-next button" href="/docs/about/suslovnv"><span>Suslov Nikolai Viktorovich</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#virtual-world-framework--ometa-collaborative-programming-of-distributed-objects-with-user-defined-languages">Virtual World Framework &amp; OMeta: collaborative programming of distributed objects with user defined languages</a></li><li><a href="#curved-space-explorer-for-squeak">Curved Space Explorer for Squeak</a></li><li><a href="#cave-virtual-reality-system">CAVE: Virtual Reality System</a></li><li><a href="#installation-with-kinect--dmx">Installation with Kinect &amp; DMX</a></li><li><a href="#collaborative-multitouch-table">Collaborative multitouch table</a></li><li><a href="#manj---creating-music-in-movement">Man'J - creating music in movement</a></li><li><a href="#virtual-museum-of-curved-spaces-in-3d">Virtual museum of curved spaces in 3D</a></li><li><a href="#art-installation-aivanov-bible-sketches-2007">Art installation &quot;A.Ivanov. Bible sketches&quot; [2007]</a></li><li><a href="#multimedia-cd-on-art-aivanov-watercolorgraphics-bible-sketches-2007">Multimedia CD on Art &quot;A.Ivanov. Watercolor.Graphics. Bible sketches&quot; [2007]</a></li><li><a href="#multimedia-cd-on-art---whistler-and-russia-2006">Multimedia CD on Art - &quot;Whistler and Russia&quot; [2006]</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/logo.png" alt="Krestianstvo.org"/></a><div><h5>Project by</h5><a href="https://www.krestianstvo.org">Krestianstvo.org</a></div><div><h5>Web</h5><a href="https://blog.krestianstvo.org">Blog</a><a href="https://www.livecoding.space">LiveCoding.space</a><a href="https://livecoding.club">LiveCoding.club</a><a href="https://live.net.ru">Live.net.ru</a></div><div><h5>Developer</h5><a href="https://gitlab.space/sdk3/livecodingspace-app">GitLab.space</a><a href="https://github.com/NikolaySuslov/livecodingspace">GitHub</a><a class="github-button" href="https://github.com/NikolaySuslov/livecodingspace" data-icon="octicon-star" data-count-href="/NikolaySuslov/livecodingspace/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a><a href="https://sdk.krestianstvo.org">SqueakSource</a></div><div><h5>Community</h5><a href="https://twitter.com/nsuslovi" target="_blank" rel="noreferrer noopener">Twitter</a><a href="https://facebook.com/nvsuslov" target="_blank" rel="noreferrer noopener">Facebook</a></div></section><section class="copyright">Copyright © 2021 Krestianstvo.org</section><script>
+      </script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-11815598-1"></script><script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag() { dataLayer.push(arguments) };
+          gtag('js', new Date());
+          gtag('config', 'UA-11815598-1');
+
+        </script></footer></div></body></html>

@@ -1,0 +1,28 @@
+{
+  "name": "krestianstvo-org-site",
+  "version": "0.0.3",
+  "description": "Krestianstvo Web",
+  "homepage": "http://www.krestianstvo.org",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "serve-index": "^1.9.1",
+    "serve-static": "^1.13.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "krestianstvo"
+  ],
+  "author": "Nikolai Suslov",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git"
+  }
+}
